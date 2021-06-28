@@ -19,12 +19,13 @@
         height:300px;}
       .faq-wrapper{}
       .faq-list{padding:30px;
-        width:100%;
         height:400px;background:linear-gradient(to bottom right, #e2eef3 50%, transparent 50%) top left/ 30% 40% no-repeat;}
       .faq-list li{background-color:white;
+        display:flex;
         height:50px;
         line-height:50px;
         margin:10px;}
+      .faq-list p{width:80%}
       .q-mark{color:#3cb4e4;
         margin:0 20px;
         background-color:white;
@@ -51,8 +52,13 @@
         left:65%;
         font-size:28px;
         line-height:55px;}
-      @media (max-width:650px){
-        .faq-list{font-size:10px;}
+      @media (max-width:480px){
+      .faq-list{font-size:15px;}
+      .faq-list li{height:80px;
+        word-break:break-all;
+        line-height:22px;
+        }
+      .faq-list p{background-color:white;}
       }
     </style>
   </head>
@@ -66,12 +72,12 @@
     <div class="body-faq">
       <div class="faq-wrapper">
         <ul class="faq-list">
-          <li><span class="q-mark">Q</span>大体の見積もり金額を電話で教えていただけますか？<span class="plus-btn">+</span></li>
-          <li><span class="q-mark">Q</span>もともと貼ってあるフィルムはいくらで剥がしてもらえますか？<span class="plus-btn">+</span></li>
-          <li><span class="q-mark">Q</span>途中でキャンセルもしくはフィルムの変更は可能ですか？<span class="plus-btn">+</span></li>
-          <li><span class="q-mark">Q</span>土日祝日でも施工していますか？<span class="plus-btn">+</span></li>
-          <li><span class="q-mark">Q</span>引っ越し後でもガラスフィルムの施工は可能ですか？<span class="plus-btn">+</span></li>
-          <li><span class="q-mark">Q</span>現物サンプルを見たいときにはどうすればいいですか？<span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>大体の見積もり金額を電話で教えていただけますか？</p><span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>もともと貼ってあるフィルムはいくらで剥がしてもらえますか？</p><span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>途中でキャンセルもしくはフィルムの変更は可能ですか？</p><span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>土日祝日でも施工していますか？</p><span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>引っ越し後でもガラスフィルムの施工は可能ですか？</p><span class="plus-btn">+</span></li>
+          <li><span class="q-mark">Q</span><p>現物サンプルを見たいときにはどうすればいいですか？</p><span class="plus-btn">+</span></li>
         </ul>
         <div class="faq-btn">
           <p>Q&A<span class="arrow-right">⇀</span></p>
